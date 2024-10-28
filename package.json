@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-ui-testing",
+  "version": "1.0.0",
+  "description": "Exercícios de testes E2E para ecommerce, incluindo fluxo de criação de conta e fluxo de checkout usando Page Objects e AppActions",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "test:open": "npx cypress open",
+    "test:headless": "npx cypress run --headless"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.15.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-axe": "^1.1.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}

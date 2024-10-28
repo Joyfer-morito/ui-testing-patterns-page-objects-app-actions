@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "firstName": "Fernanda",
+      "lastName": "Joyce",
+      "phoneNumber": "1234567890",
+      "password": "Joy639971#",
+      "reEnterPassword": "Joy639971#"
+    }
+  ],
+  "contactDetails": {
+    "name": "Fernanda Joyce",
+    "mobileNumber": "11959755562",
+    "address": "Licia Magna, 37",
+    "city": "São Paulo",
+    "state": "São Paulo",
+    "zipCode": "05164-090"
+  },
+  "credentials": {
+    "email": "joycefmtim@gmail.com",
+    "senha": "Joy639971#"
+  }
+}
