@@ -13,4 +13,4 @@ class ProdutoPage {
     }
 }
 
-export default new ProdutoPage();
+export default new ProdutoPage();  

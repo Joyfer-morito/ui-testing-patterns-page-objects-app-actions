@@ -14,6 +14,12 @@ Cypress.Commands.add('login', () => {
 Cypress.Commands.add('addToCart', () => {
     ProdutoPage.addToCart();  
 });
+Cypress.Commands.add('updateCart', () => {
+    cy.get('[data-testid="addItem"] > .css-146c3p1').click(); 
+});
+Cypress.Commands.add('removeFromCart', () => {
+    cy.get('[data-testid="remove"] > .css-146c3p1').click(); 
+});
 
 Cypress.Commands.add('completeCheckoutWithNewAddress', () => {
     const { name, mobileNumber, address, city, state, zipCode } = userData.contactDetails;

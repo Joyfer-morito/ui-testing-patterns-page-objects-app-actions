@@ -1,0 +1,141 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-05T16:20:15.976Z",
+    "end": "2024-11-05T16:20:24.049Z",
+    "duration": 8073,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "02602669-27c4-44ab-92fa-8951292af39d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\carrinho.cy.js",
+      "file": "cypress\\e2e\\carrinho.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "73c0cda7-c76b-4ab2-9f23-75f620f0c8fa",
+          "title": "Teste do Carrinho de Compras",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve adicionar um item ao carrinho",
+              "fullTitle": "Teste do Carrinho de Compras Deve adicionar um item ao carrinho",
+              "timedOut": null,
+              "duration": 3388,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('GET', '/public/getCart?userId=671a67e8094935897eaf99e0', {\n  fixture: 'carrinho.json'\n}).as('getCart');\ncy.addToCart();",
+              "err": {},
+              "uuid": "968a4978-d789-4ff9-a14a-9120f44cc5bb",
+              "parentUUID": "73c0cda7-c76b-4ab2-9f23-75f620f0c8fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve atualizar a quantidade de um item no carrinho",
+              "fullTitle": "Teste do Carrinho de Compras Deve atualizar a quantidade de um item no carrinho",
+              "timedOut": null,
+              "duration": 2359,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('PUT', '/public/updateCart/671a67e8094935897eaf99e0').as('addToCart');\ncy.addToCart();\ncy.wait('@addToCart');\ncy.updateCart();",
+              "err": {},
+              "uuid": "367fc3d6-88c7-4273-8bf7-8f2e1920cbe7",
+              "parentUUID": "73c0cda7-c76b-4ab2-9f23-75f620f0c8fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve remover um item do carrinho",
+              "fullTitle": "Teste do Carrinho de Compras Deve remover um item do carrinho",
+              "timedOut": null,
+              "duration": 2082,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.addToCart();\ncy.intercept('PUT', '/public/updateCart/671a67e8094935897eaf99e0', {\n  fixture: 'carrinho.json'\n}).as('removeFromCart');\ncy.removeFromCart();",
+              "err": {},
+              "uuid": "a6aaaaec-9a1f-40d0-bd58-7f9ad72d3123",
+              "parentUUID": "73c0cda7-c76b-4ab2-9f23-75f620f0c8fa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "968a4978-d789-4ff9-a14a-9120f44cc5bb",
+            "367fc3d6-88c7-4273-8bf7-8f2e1920cbe7",
+            "a6aaaaec-9a1f-40d0-bd58-7f9ad72d3123"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7829,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]-result",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "[name]-result",
+        "html": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

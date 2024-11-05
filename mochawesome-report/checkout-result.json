@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-05T16:20:26.004Z",
+    "end": "2024-11-05T16:20:32.814Z",
+    "duration": 6810,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3802ca5b-0934-40f2-bcac-68ac364ad3c8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkout.cy.js",
+      "file": "cypress\\e2e\\checkout.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "25a1edc8-304f-45ac-a199-e50b3c008e8b",
+          "title": "Teste de Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve abrir o menu e fazer login",
+              "fullTitle": "Teste de Login Deve abrir o menu e fazer login",
+              "timedOut": null,
+              "duration": 6695,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.openMenu('Account');\ncy.login();\ncy.addToCart();\ncy.completeCheckoutWithNewAddress();\ncy.goBackHome();",
+              "err": {},
+              "uuid": "a7c6714f-7566-4fd1-add5-ff9b57df2050",
+              "parentUUID": "25a1edc8-304f-45ac-a199-e50b3c008e8b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a7c6714f-7566-4fd1-add5-ff9b57df2050"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6695,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]-result",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "[name]-result",
+        "html": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
